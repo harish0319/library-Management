@@ -1,0 +1,7 @@
+{
+    "username": "root",
+    "password": "P&h@1927",
+    "database": "library_management",
+    "host": "localhost",
+    "dialect": "mysql"
+  }

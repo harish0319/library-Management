@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Library Managemant</h1>
+
+    <!-- book issue form -->
+     <form id="issueBookForm">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" required>
+        <button type="submit">Issue Book</button>
+     </form>
+
+     <!-- issued Books Table -->
+      <h2>Issued Books</h2>
+      <table id="issuedBooksTable">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Issued At</th>
+                <th>Return By</th>
+                <th>Fine</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Issued book rows will be dynamically added here -->
+        </tbody>
+      </table>
+
+      <!-- return books table -->
+       <h2>Returned Books</h2>
+       <table id="returnedBooksTable">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Issued At</th>
+                <th>Return At</th>
+                <th>Fine Paid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- returned book will be dynamically added here -->
+        </tbody>
+       </table>
+       <!-- fine payment modal -->
+        <div id="payFineModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="fineAmount">Fine amount: 0</p>
+                <button id="payFineButton">Pay Fine</button>
+            </div>
+        </div>
+        
+     <script src="./script.js"></script>
+</body>
+</html>
